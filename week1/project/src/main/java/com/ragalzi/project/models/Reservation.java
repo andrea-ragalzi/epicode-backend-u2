@@ -24,14 +24,14 @@ public class Reservation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    
+
     @Column(nullable = false)
     private LocalDate date;
 
-    @Column(name="start_time", nullable = false)
+    @Column(nullable = false)
     private LocalTime startTime;
 
-    @Column(name="end_time", nullable = false)
+    @Column(nullable = false)
     private LocalTime endTime;
 
     @ManyToOne
@@ -43,12 +43,9 @@ public class Reservation {
     private User user;
 
     public Reservation(
-            LocalDate date, LocalTime startTime, LocalTime endTime,
-            Workspace workspace, User user) {
+            LocalDate date, LocalTime startTime, LocalTime endTime) {
         this.date = date;
         this.startTime = startTime;
         this.endTime = endTime;
-        this.workspace = workspace;
-        this.user = user;
     }
 }

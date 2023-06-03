@@ -1,9 +1,5 @@
 package com.ragalzi.project.models;
 
-import java.util.Locale;
-
-import com.github.javafaker.Faker;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -39,12 +35,4 @@ public class Building {
         this.city = city;
     }
 
-    public static Building randomBuilding() {
-        Faker faker = new Faker(new Locale("it"));
-        return new Building(
-            faker.company().name(),
-            faker.address().streetAddress(),
-            faker.address().city()
-        );
-    }
 }
