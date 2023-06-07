@@ -16,4 +16,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     @Query("SELECT u FROM User u WHERE (SELECT COUNT(r) FROM Reservation r WHERE r.user = u) < 2")
     List<User> findAllWithLessThanTwoReservations();
+
+    public User findByEmailAndPassword(String email, String password);
+
 }

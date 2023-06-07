@@ -2,6 +2,8 @@ package com.ragalzi.day2.models;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.ragalzi.day2.enumerates.WorkspaceType;
 
 import jakarta.persistence.Column;
@@ -47,6 +49,7 @@ public class Workspace {
     private Building building;
 
     @OneToMany(mappedBy = "workspace", fetch = FetchType.EAGER)
+    @JsonIgnore
     private List<Reservation> reservations;
 
     public Workspace(

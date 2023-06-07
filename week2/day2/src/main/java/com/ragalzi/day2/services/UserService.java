@@ -49,8 +49,9 @@ public class UserService {
         return userFakeProvider.getObject();
     }
 
-    public void save(User user) {
+    public String save(User user) {
         userRepository.save(user);
+        return String.format("User saved with ID: %s", user.getId());
     }
 
     public void update(User user) {
@@ -79,6 +80,12 @@ public class UserService {
 
     public boolean existsAdminUser() {
         return userRepository.existsAdminUser();
+    }
+
+    public String login(User user) {
+        User u = userRepository.findByEmailAndPassword(
+                user.getEmail(), user.getPassword());
+        return String.format("User logged in with ID: %s", u.getId());
     }
 
 }
