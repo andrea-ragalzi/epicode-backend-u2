@@ -3,7 +3,6 @@ package com.ragalzi.day2.models;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Column;
@@ -52,5 +51,17 @@ public class Reservation {
         this.date = date;
         this.startTime = startTime;
         this.endTime = endTime;
+    }
+
+    @Override
+    public String toString() {
+        return "Reservation{" +
+                "id=" + id +
+                ", date=" + date +
+                ", startTime=" + startTime +
+                ", endTime=" + endTime +
+                ", workspace=" + (workspace != null ? workspace.getId() : null) +
+                ", user=" + (user != null ? user.getId() : null) +
+                '}';
     }
 }

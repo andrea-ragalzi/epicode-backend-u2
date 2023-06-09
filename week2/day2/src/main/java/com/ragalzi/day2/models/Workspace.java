@@ -61,4 +61,16 @@ public class Workspace {
         this.maxOccupancy = maxOccupancy;
     }
 
+    @Override
+    public String toString() {
+        return "Workspace{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", type=" + type +
+                ", maxOccupancy=" + maxOccupancy +
+                ", building=" + (building != null ? building.getId() : null) +
+                '}';
+    }
+
 }
