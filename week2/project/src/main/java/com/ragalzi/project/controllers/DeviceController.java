@@ -18,7 +18,7 @@ import com.ragalzi.project.models.Device;
 import com.ragalzi.project.repositories.DeviceRepository;
 
 @RestController
-@RequestMapping("/devices")
+@RequestMapping("/api/devices")
 public class DeviceController {
     @Autowired
     private DeviceRepository deviceRepository;

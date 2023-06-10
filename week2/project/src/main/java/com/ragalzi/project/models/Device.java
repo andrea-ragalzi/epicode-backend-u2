@@ -1,8 +1,10 @@
 package com.ragalzi.project.models;
 
 import com.ragalzi.project.enumerates.DeviceType;
+import com.ragalzi.project.enumerates.StatusType;
 import com.ragalzi.project.security.models.User;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
@@ -26,10 +28,14 @@ public class Device {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "serial_number", unique = true, nullable = false)
+    private String serialNumber;
+
     @Enumerated(EnumType.STRING)
     private DeviceType type;
 
-    private String status;
+    @Enumerated(EnumType.STRING)
+    private StatusType status;
     
     @ManyToOne
     private User user;
