@@ -99,15 +99,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8082/sensors/1002",
+					"raw": "http://localhost:8082/sensors",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8082",
 					"path": [
-						"sensors",
-						"1002"
+						"sensors"
 					]
 				}
 			},
@@ -119,15 +118,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8083/sensors/1003",
+					"raw": "http://localhost:8083/sensors",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8083",
 					"path": [
-						"sensors",
-						"1003"
+						"sensors"
 					]
 				}
 			},
