@@ -12,7 +12,7 @@ public class FireSensorData {
     @Value("${sensor.latitude}")
     private double latitude;
 
-    @Value("${sensor.longitude}")
+    @Value("${sensor.longitudine}")
     private double longitude;
 
     private int smokeLevel;
