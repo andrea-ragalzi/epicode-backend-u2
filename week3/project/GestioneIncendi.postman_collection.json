@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "762f596c-839c-46e9-87e7-efa0648ec0c1",
+		"name": "GestioneIncendi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27810584"
+	},
+	"item": [
+		{
+			"name": "Sensor Roma Add Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : 1002,\n    \"latitude\" : 20.00,\n    \"longitude\" : 40.00,\n    \"smokeLevel\" : 7\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/sensors/1002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"sensors",
+						"1002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sensor Bologna Add Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : 1003,\n    \"latitude\" : 20.00,\n    \"longitude\" : 40.00,\n    \"smokeLevel\" : 7\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/sensors/1003",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"sensors",
+						"1003"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sensor Madrid Add Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : 2002,\n    \"latitude\" : 20.00,\n    \"longitude\" : 40.00,\n    \"smokeLevel\" : 6\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8092/sensors/2002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8092",
+					"path": [
+						"sensors",
+						"2002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sensor Roma All Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/sensors/1002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"sensors",
+						"1002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sensor Bologna All Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/sensors/1003",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"sensors",
+						"1003"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ControlProcess Italy All Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/control-process/sensors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"control-process",
+						"sensors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ControlProcess Spain All Data Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8091/control-process/sensors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"control-process",
+						"sensors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Control Center All Alarms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/control-center/alarms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"control-center",
+						"alarms"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

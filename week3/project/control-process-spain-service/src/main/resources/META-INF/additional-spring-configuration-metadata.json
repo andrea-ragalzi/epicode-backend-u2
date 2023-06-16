@@ -1,0 +1,22 @@
+{"properties": [
+  {
+    "name": "sensor.port.2000",
+    "type": "java.lang.String",
+    "description": "A description for 'sensor.port.2000'"
+  },
+  {
+    "name": "sensor.port.1000",
+    "type": "java.lang.String",
+    "description": "A description for 'sensor.port.1000'"
+  },
+  {
+    "name": "sensor.port.1001",
+    "type": "java.lang.String",
+    "description": "A description for 'sensor.port.1001'"
+  },
+  {
+    "name": "sensor.config.path",
+    "type": "java.lang.String",
+    "description": "A description for 'sensor.config.path'"
+  }
+]}

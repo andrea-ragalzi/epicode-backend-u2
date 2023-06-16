@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "sensor.id",
+    "type": "java.lang.String",
+    "description": "A description for 'sensor.id'"
+  },
+  {
+    "name": "sensor.latitude",
+    "type": "java.lang.String",
+    "description": "A description for 'sensor.latitude'"
+  },
+  {
+    "name": "sensor.longitudine",
+    "type": "java.lang.String",
+    "description": "A description for 'sensor.longitudine'"
+  }
+]}
