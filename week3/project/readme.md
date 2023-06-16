@@ -54,3 +54,6 @@ Per semplificare la simulazione, le rilevazioni che hanno generato l'allarme ven
 Per visualizzare tutti gli allarmi, fare una chiamata GET all'endpoint:
 
 Endpoint: GET http://localhost:8080/control-center/alarms
+
+Nota: È possibile aggiungere o rimuovere un centro di controllo
+senza creare problemi.
